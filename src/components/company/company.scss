@@ -1,0 +1,15 @@
+.company {
+    padding: var(--padding-md);
+    h2 {
+        margin-bottom: 0.25em;
+        font-weight: 600;
+    }
+    p {
+        margin-top: 0;
+    }
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

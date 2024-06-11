@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Revolution Ordering",
+        "url": "https://www.revolutionordering.com/",
+        "linkedIn": "https://www.linkedin.com/company/revolution-ordering/",
+        "description": "A Digital Ordering Partner for Hospitality and Restaurant Companies",
+        "projects": [
+            {
+                "id": "RO-01",
+                "name": "Master Item",
+                "summary": "The goal of Master Item is to provide restaurants with an easy solution for managing complex menu items.",
+                "imageUrl": "src/assets/images/masteritem.png"
+            },
+            {
+                "id": "RO-02",
+                "name": "Doordash Integration",
+                "summary": "Many restaurants aim to maximize their sales channels. One crucial avenue is Doordash, I developed the UI to facilitate customer connections between Revolution and Doordash.",
+                "imageUrl": "src/assets/images/doordashssio.png"
+            },
+            {
+                "id": "RO-03",
+                "name": "Revolution Self Service Sign On",
+                "summary": "Operations spend considerable effort onboarding new customers. To make it feasible to onboard smaller customers, we needed a self-service sign-up system.",
+                "imageUrl": "src/assets/images/SSSO.png"
+            },
+            {
+                "id": "RO-04",
+                "name": "Golden Corral",
+                "summary": "Although Revolution Ordering provided standard websites for customers, we designed a special website for Golden Corral to win them as a client.",
+                "imageUrl": "src/assets/images/golden-corral.png"
+            }
+        ]
+    },
+    {
+        "name": "BlueCart",
+        "url": "https://www.bluecart.com/",
+        "linkedIn": "https://www.linkedin.com/company/bluecarthq/",
+        "description": "An online ordering platform for the hospitality industry for wholesale and restaurants.",
+        "projects": [
+            {
+                "id": "BC-01",
+                "name": "Invoice Payment",
+                "summary": "BlueCart introduced BlueCart Pay, a method for vendors to send and receive payments for invoices from the restaurants they are connected to through BlueCart.",
+                "imageUrl": "src/assets/images/bluecart-invoices.png"
+            },
+            {
+                "id": "BC-01",
+                "name": "Inventory",
+                "summary": "Binwise and BlueCart merged a few years ago and this project is about recreating the Binwise inventory system into BlueCart",
+                "imageUrl": "src/assets/images/bluecart-inventory.png"
+            }
+        ]
+    },
+    {
+        "name": "Projects",
+        "projects": [
+            {
+                "id": "GM-01",
+                "name": "DB Meter",
+                "summary": "In my spare time, I code with friends. We started because we also do amateur sound engineering for our church and wanted to measure sound levels in different areas.",
+                "imageUrl": "src/assets/images/decibel-meter.png"
+            }
+        ]
+    }
+]

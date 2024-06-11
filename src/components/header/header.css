@@ -1,0 +1,29 @@
+.header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(270deg, var(--background), var(--accent), var(--background), var(--accent));
+    background-size: 800% 800%;
+    animation: gradientAnimation 50s ease infinite;
+    padding: var(--padding-md);
+    h1 {
+        margin: 0;
+        font-weight: 900;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

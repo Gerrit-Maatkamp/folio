@@ -1,9 +1,21 @@
 .projects {
+    max-width: 1295px;
+    margin: 0 auto;
     &-list {
         display: flex;
         flex-wrap: wrap;
         max-width: 100%;
         gap: calc(var(--padding-md) / 2);
-        padding: 0 var(--padding-md);
+        padding: 0 calc(var(--padding-md) / 2) 0 var(--padding-md);
+    }
+}
+
+.project-item {
+    width: 49%;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+
+    @media (max-width: 1296px) {
+        width: 48%;
     }
 }

@@ -9,25 +9,97 @@
                 "id": "RO-01",
                 "name": "Master Item",
                 "summary": "The goal of Master Item is to provide restaurants with an easy solution for managing complex menu items.",
-                "imageUrl": "src/assets/images/masteritem.png"
+                "imageUrl": "src/assets/images/masteritem.png",
+                "steps":[
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    },
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    },
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    }
+                ],
+                "prototype": ""
             },
             {
                 "id": "RO-02",
                 "name": "Doordash Integration",
                 "summary": "Many restaurants aim to maximize their sales channels. One crucial avenue is Doordash, I developed the UI to facilitate customer connections between Revolution and Doordash.",
-                "imageUrl": "src/assets/images/doordashssio.png"
+                "imageUrl": "src/assets/images/doordashssio.png",
+                "steps":[
+                    {
+                        "heading": "Backstory",
+                        "paragraph": "Revolution Ordering offers Connect, a product enabling restaurants to link their menus with multiple marketplaces. However, the initial sign-up process posed a major hurdle, requiring our operations team to communicate directly with marketplace teams via email. This project focused on designing a user interface to simplify restaurant management of marketplace connections, beginning with DoorDash.",
+                        "image": ""
+                    },
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    },
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    }
+                ],
+                "prototype": ""
             },
             {
                 "id": "RO-03",
-                "name": "Revolution Self Service Sign On",
+                "name": "Self Service Sign On",
                 "summary": "Operations spend considerable effort onboarding new customers. To make it feasible to onboard smaller customers, we needed a self-service sign-up system.",
-                "imageUrl": "src/assets/images/SSSO.png"
+                "imageUrl": "src/assets/images/SSSO.png",
+                "steps":[
+                    {
+                        "heading": "Backstory",
+                        "paragraph": "",
+                        "image": "src/assets/images/masteritem.png"
+                    },
+                    {
+                        "heading": "Heading",
+                        "paragraph": "text",
+                        "image": "src/assets/images/masteritem.png"
+                    },
+                    {
+                        "heading": "Heading",
+                        "paragraph": "text",
+                        "image": "src/assets/images/masteritem.png"
+                    }
+                ],
+                "prototype": ""
             },
             {
                 "id": "RO-04",
                 "name": "Golden Corral",
                 "summary": "Although Revolution Ordering provided standard websites for customers, we designed a special website for Golden Corral to win them as a client.",
-                "imageUrl": "src/assets/images/golden-corral.png"
+                "imageUrl": "src/assets/images/golden-corral.png",
+                "steps":[
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    },
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    },
+                    {
+                        "heading": "",
+                        "paragraph": "",
+                        "image": ""
+                    }
+                ],
+                "prototype": ""
             }
         ]
     },

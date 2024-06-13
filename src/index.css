@@ -1,11 +1,15 @@
+@import url(./assets/fonts/fonts.css);
+
 :root {
   --accent: #EFBD40;
+  --accent-rgb: rgb(239, 189, 64);
   --text-color: rgba(255, 255, 255, 0.87);
-  --text-color-sec: rgba(255, 255, 255, 0.87);
+  --text-color-sec: #ffffffde;
   --background: #222;
   --button-background: #1a1a1a;
-  --foreground: rgba(155, 155, 155, 0.8);
+  --foreground: #333;
   --card-background: rgba(255, 255, 255, 0.2);
+  --overlay: rgba(0, 0, 0, 0.9);
   --link-color: #646cff;
   --link-hover-color: #535bf2;
   --button-bg-color: #1a1a1a;
@@ -14,10 +18,14 @@
   --padding-sm: 1em;
   --padding-zero: 0;
   --border-radius: .5em;
+  --box-shadow-1: 0 -1px 10px 5px rgba(100, 100, 100, 0.3);
+  --box-shadow-2: 0 1px 10px 5px rgba(100, 100, 100, 0.3);
 
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
 
   color-scheme: light dark;
   color: var(--text-color);
@@ -75,6 +83,9 @@ h3 {
 .button:hover {
   color: var(--button-background);
   background-color: var(--accent);
+  margin-top: -2px;
+  margin-bottom: 2px;
+  box-shadow: var(--box-shadow-2);
 }
 svg {
   fill: var(--text-color)
@@ -86,8 +97,27 @@ svg {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.button-text {
+  display: flex;
+  gap: .5em;
+  color: var(--text-color);
+  justify-content: start;
+}
+
+.button-text-icon {
+  width: 65px;
+  display: flex;
+  align-items: center;
+}
+
 .buttongroup {
   display: flex;
+  gap: calc(var(--padding-md) / 2);
+}
+
+.buttongroup-vertical {
+  display: flex;
+  flex-direction: column;
   gap: calc(var(--padding-md) / 2);
 }
 
@@ -96,10 +126,12 @@ svg {
   :root {
     --text-color: #213547;
     --background: #f2f2f2;
+    --foreground: #ffffff;
     --link-hover-color: #747bff;
     --button-bg-color: #f9f9f9;
     --card-background: #fff;
     --button-background: #ffffff;
+    --overlay: rgba(210, 210, 210, 0.9);
     color: var(--text-color);
     background-color: var(--background);
   }

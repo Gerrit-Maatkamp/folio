@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import "./App.css";
 import Projects from "./components/Projects/projects";
+import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div>
         <Header />
         <Projects />
+        <Footer />
       </div>
     </>
   );

@@ -1,0 +1,129 @@
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    padding-top: 4em;
+    h1 {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.dialog {
+    background: var(--foreground);
+    border-radius: var(--border-radius);
+    width: 70%;
+    max-width: 1200px;
+    overflow: hidden;
+    &-content {
+        padding: var(--padding-md);
+        padding-top: 0;
+    }
+    &-header {
+        position: relative;
+        overflow: hidden;
+        &-image {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+        }
+        &-overlay {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+    }
+}
+
+
+.radial-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(239, 189, 64, 1), rgba(239, 189, 64, 0));
+    animation: moveGradient 30s infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left-side {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.left-side img {
+    width: 100%;
+    height: auto;
+}
+
+.right-side {
+    width: 70%;
+}
+
+.close-button {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 0.5em;
+    font-size: 1em;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+    background: none;
+    svg {
+        width: 2em;
+        height: 2em;
+    }
+    &-back-text {
+        font-family: "HomemadeApple-Regular";
+    }
+    &:hover {
+        background-color: rgba(250,250,250, 0.1);
+        box-shadow: 20px 0 20px 20px rgba(239,189,64,0.1);
+        padding: 1.5em;
+        svg {
+            width: 2.3em;
+            height: 2.3em;
+        }
+    }
+}

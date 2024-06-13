@@ -3,7 +3,7 @@ import "./project.scss";
 
 interface ProjectProps {
   title: string;
-  image: string;
+  image?: string;
 }
 
 const Project: React.FC<ProjectProps> = ({ title, image }) => {

@@ -1,12 +1,12 @@
-import React from "react";
-import "./header.css";
+import "./header.scss";
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Gerrit</h1>
-      <h1>Maatkamp</h1>
-      <h2>Product Design | Frontend Development</h2>
+      <div className="header-content">
+        <h1>Gerrit Maatkamp</h1>
+        <h2>Product Design | Front-end Development</h2>
+      </div>
     </div>
   );
 };

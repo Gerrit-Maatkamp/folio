@@ -4,21 +4,7 @@ import Company from "../company/company";
 import "./projects.scss";
 import projects from "./projects.json";
 import Dialog from "../dialog/dialog";
-
-interface Step {
-  heading: string;
-  paragraph: string;
-  image: string;
-}
-interface ProjectItem {
-  id: string;
-  name: string;
-  summary?: string;
-  imageUrl?: string;
-  images?: string[];
-  prototype?: string;
-  steps?: Step[];
-}
+import { ProjectItem } from "../../interfaces";
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(
@@ -26,10 +12,12 @@ const Projects: React.FC = () => {
   );
 
   const handleProjectClick = (project: ProjectItem) => {
+    document.body.classList.add("dialog-open");
     setSelectedProject(project);
   };
 
   const handleCloseDialog = () => {
+    document.body.classList.remove("dialog-open");
     setSelectedProject(null);
   };
 
@@ -52,7 +40,7 @@ const Projects: React.FC = () => {
                     onClick={() => handleProjectClick(p)}
                     className="project-item"
                   >
-                    <Project title={p.name} image={p.imageUrl} />
+                    <Project {...p} />
                   </div>
                 );
               })}

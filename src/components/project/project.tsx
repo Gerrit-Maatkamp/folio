@@ -1,20 +1,16 @@
 import React from "react";
 import "./project.scss";
+import { ProjectItem } from "../../interfaces";
 
-interface ProjectProps {
-  title: string;
-  image?: string;
-}
-
-const Project: React.FC<ProjectProps> = ({ title, image }) => {
+const Project: React.FC<ProjectItem> = (project) => {
   return (
     <div className="project">
       <div className="project-image">
-        <img src={image} alt={title} />
+        <img src={project.imageUrl} alt={project.name} />
       </div>
       <div className="project-content">
-        <h3>{title}</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3>{project.name}</h3>
+        <p>{project.summary}</p>
       </div>
     </div>
   );

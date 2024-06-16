@@ -5,13 +5,15 @@ import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <Header />
-        <Projects />
+      <div className="app">
+        <div className="app-header">
+          <Header />
+        </div>
+        <div className="app-project-list">
+          <Projects />
+        </div>
         <Footer />
       </div>
     </>

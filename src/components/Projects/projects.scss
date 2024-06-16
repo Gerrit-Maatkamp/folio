@@ -1,21 +1,31 @@
 .projects {
-    max-width: 1295px;
+    max-width: 1400px;
     margin: 0 auto;
     &-list {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        gap: calc(var(--padding-md) / 2);
-        padding: 0 calc(var(--padding-md) / 2) 0 var(--padding-md);
+        display: grid;
+        gap: 1em;
+        padding: var(--padding-sm);
+        margin: 0 auto;
+        grid-template-columns: auto auto auto auto;
+        justify-content: start;
+        @media (max-width: 900px) {
+            grid-template-columns: auto auto auto;
+        }
+        @media (max-width: 700px) {
+            grid-template-columns: auto auto;
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: auto;
+        }
     }
 }
 
 .project-item {
-    width: 49%;
-    background-color: var(--card-background);
+    max-width: 325px;
+    background-color: var(--foreground);
     border-radius: var(--border-radius);
-
-    @media (max-width: 1296px) {
-        width: 48%;
+    @media (max-width: 600px) {
+        width: 100%;
+        max-width: 100%;
     }
 }

@@ -3,10 +3,6 @@
   width: 100%;
 }
 
-.card {
-  padding: 2em;
-}
-
 h1 {
   text-transform: uppercase;
   font-weight: bolder;
@@ -15,5 +11,27 @@ h1 {
 
 h2 {
   font-weight: 100;
+}
 
+.app-header {
+  width: 100%;
+  height: 30vh;
+}
+
+@media (max-width: 1296px) {
+  .app-header {
+    width: 100%;
+    height: 20vh;
+  }
+  .app-header h1 {
+    font-size: 2em;
+    }
+  .app-header h2 {
+    font-size: 1.2em;
+
+  }
+}
+
+.app-project-list {
+  padding-top: 10vh;
 }

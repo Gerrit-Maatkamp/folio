@@ -10,7 +10,17 @@
     justify-content: center;
     border-radius: var(--border-radius);
     overflow: hidden;
-    padding-top: 4em;
+    max-height: 100vh;
+    padding: var(--padding-md);
+
+    @media (max-width: 1295px) {
+        padding: var(--padding-sm);
+
+        h1 {
+            font-size: 1em;
+        }
+    }
+
     h1 {
         width: 90%;
         text-align: center;
@@ -20,22 +30,44 @@
 .dialog {
     background: var(--foreground);
     border-radius: var(--border-radius);
-    width: 70%;
-    max-width: 1200px;
+    max-width: 90vw;
+    max-height: 92vh;
     overflow: hidden;
+
+    @media (max-width: 1295px) {
+        max-width: 98vw;
+    }
+
     &-content {
         padding: var(--padding-md);
-        padding-top: 0;
+        height: 80vh;
+        overflow-y: scroll;
+        @media (max-width: 1295px) {
+            padding: var(--padding-sm);
+            padding-top: 0;
+        }
+        &-paragraph {
+            padding: 0 var(--padding-md);
+            &-actions {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                gap: var(--padding-md)
+            }
+        }
     }
+
     &-header {
         position: relative;
         overflow: hidden;
+
         &-image {
             position: relative;
             width: 100%;
             height: 180px;
             overflow: hidden;
         }
+
         &-overlay {
             position: relative;
             z-index: 1;
@@ -48,7 +80,6 @@
         }
     }
 }
-
 
 .radial-gradient {
     position: absolute;
@@ -75,23 +106,74 @@
 }
 
 .content-section {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 0px;
+    padding: var(--padding-md);
+
+    @media (max-width: 1295px) {
+        display: block;
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--padding-md);
+
+        @media (max-width: 1296px) {
+            display: block;
+        }
+    }
 }
 
 .left-side {
-    width: 30%;
-    padding-right: 20px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    @media (min-width: 1295px) {
+        margin-top: var(--padding-sm);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.left-side img {
-    width: 100%;
-    height: auto;
-}
+.prototype-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--padding-sm);
+    height: 5em;
+    border-radius: var(--border-radius);
+    margin-top: 2em;
+    padding: 0 var(--padding-md);
+    background-color: var(--button-background);
+    font-family: "HelveticaNeueCondensedBlack", "HelveticaNeue", Helvetica, sans-serif;
+    font-size: 1.25em;
+    align-self: center;
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: var(--text-color-sec);
+        background-color: var(--accent);
+        border-color: var(--accent);
+    }
 
-.right-side {
-    width: 70%;
+    &:focus,
+    &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+
+    svg {
+        fill: var(--text-color);
+    }
+
+    &-text {
+        display: flex;
+        gap: 0.5em;
+        color: var(--text-color);
+        justify-content: start;
+    }
 }
 
 .close-button {
@@ -108,22 +190,30 @@
     width: 100%;
     padding: 2em;
     z-index: -1;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background: none;
+
     svg {
         width: 2em;
         height: 2em;
     }
+
     &-back-text {
         font-family: "HomemadeApple-Regular";
     }
+
     &:hover {
-        background-color: rgba(250,250,250, 0.1);
-        box-shadow: 20px 0 20px 20px rgba(239,189,64,0.1);
+        background-color: rgba(250, 250, 250, 0.1);
+        box-shadow: 20px 0 20px 20px rgba(239, 189, 64, 0.1);
         padding: 1.5em;
+
         svg {
             width: 2.3em;
             height: 2.3em;
         }
     }
+}
+
+.filler {
+    height: 8em;
 }

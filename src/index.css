@@ -3,8 +3,11 @@
 :root {
   --accent: #EFBD40;
   --accent-rgb: rgb(239, 189, 64);
+  --accent-rgb-5: rgba(239, 189, 64, .5);
+  --accent-rgb-3: rgba(239, 189, 64, .3);
+  --accent-rgb-2: rgba(239, 189, 64, .2);
   --text-color: rgba(255, 255, 255, 0.87);
-  --text-color-sec: #ffffffde;
+  --text-color-sec: #ffffff;
   --background: #222;
   --button-background: #1a1a1a;
   --foreground: #333;
@@ -19,12 +22,13 @@
   --padding-zero: 0;
   --border-radius: .5em;
   --box-shadow-1: 0 -1px 10px 5px rgba(100, 100, 100, 0.3);
+  --box-shadow-1-inset: inset 0 -1px 10px 5px rgba(100, 100, 100, 0.3);
   --box-shadow-2: 0 1px 10px 5px rgba(100, 100, 100, 0.3);
 
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.1em;
   letter-spacing: 1.5px;
 
   color-scheme: light dark;

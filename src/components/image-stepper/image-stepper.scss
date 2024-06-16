@@ -1,0 +1,64 @@
+.image-stepper {
+        position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+        
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: var(--border-radius);
+                transition: all 0.5s ease-in-out;
+            }
+
+    .image-stepper-controls {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(-50%);
+        padding: 0 10px;
+        pointer-events: none;
+        transition: box-shadow 0.5s ease-in-out;
+
+        .image-stepper-controls-button {
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            pointer-events: all;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: background 0.3s;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.8);
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .highlight {
+        transition: all .4s ease-in-out;
+        button {
+            box-shadow: 0px 0px 5px 5px var(--accent-rgb-3);
+        }
+    }
+}

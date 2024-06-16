@@ -161,36 +161,5 @@
                 "prototypeText": "Explore our prototype that revolutionizes inventory management! Discover seamless real-time tracking, secure data traceability, and flexible input methods. Check out the prototype now and witness the future of inventory handling!"
             }
         ]
-    },
-    {
-        "name": "Projects",
-        "projects": [
-            {
-                "id": "GM-01",
-                "name": "DB Meter",
-                "summary": "In my spare time, I code with friends. We started because we also do amateur sound engineering for our church and wanted to measure sound levels in different areas.",
-                "imageUrl": "src/assets/images/decibel-meter.png",
-                "steps":[
-                    {
-                        "heading": "",
-                        "paragraph": "",
-                        "images": [""]
-                    },
-                    {
-                        "heading": "",
-                        "paragraph": "",
-                        "images": [""]
-                    },
-                    {
-                        "heading": "",
-                        "paragraph": "",
-                        "images": [""]
-                    }
-                ],
-                "prototype": "",
-                "prototypeHeader": "The Prototype",
-                "prototypeText": ""
-            }
-        ]
     }
 ]

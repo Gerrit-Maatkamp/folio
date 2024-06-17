@@ -1,7 +1,7 @@
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { ContentCopy, FactCheck } from "@mui/icons-material";
+import { ContentCopy } from "@mui/icons-material";
 import "./footer.scss";
 
 const copyToClipboard = (text: string) => {
@@ -42,14 +42,6 @@ const Footer = () => {
         >
           <LinkedInIcon />
           Check my LinkedIn
-        </a>
-        <a
-          className="button button-text"
-          href="/path/to/your/resume.pdf"
-          download
-        >
-          <FactCheck />
-          Download my Resume
         </a>
       </div>
       <a

@@ -14,14 +14,13 @@ const baseUrl = getBase();
 
 const Project: React.FC<ProjectItem> = (project) => {
   console.log("baseUrl + project.imageUrl");
-  // console.log(baseUrl + project.imageUrl);
-  console.log("%PUBLIC_URL%" + project.imageUrl);
+  console.log(baseUrl + project.imageUrl);
 
   return (
     <div className="project">
-      <div className="project-image">
+      {/* <div className="project-image">
         <img src={baseUrl + project.imageUrl} alt={project.name} />
-      </div>
+      </div> */}
       <div className="project-content">
         <h3>{project.name}</h3>
         <p>{project.summary}</p>

@@ -6,10 +6,18 @@ interface ImageStepperProps {
   images: string[];
 }
 
+const getBase = () => {
+  if (typeof process !== "undefined" && process.env && process.env.PUBLIC_URL) {
+    return process.env.PUBLIC_URL;
+  } else {
+    return "src";
+  }
+};
+
 const ImageStepper: React.FC<ImageStepperProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const controlsRef = useRef<HTMLDivElement>(null);
-
+  const baseUrl = getBase();
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -48,7 +56,10 @@ const ImageStepper: React.FC<ImageStepperProps> = ({ images }) => {
 
   return (
     <div className="image-stepper">
-      <img src={images[currentIndex]} alt={`Step ${currentIndex + 1}`} />
+      <img
+        src={baseUrl + images[currentIndex]}
+        alt={`Step ${currentIndex + 1}`}
+      />
       <div ref={controlsRef} className="image-stepper-controls">
         {images.length > 1 && (
           <button

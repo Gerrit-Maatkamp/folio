@@ -41,13 +41,7 @@ const Dialog: React.FC<DialogProps> = ({ project, onClose }) => {
                       <p>{step.paragraph}</p>
                     </div>
                     <div className="left-side">
-                      {step?.images?.map((image, imgIndex) => (
-                        <img
-                          key={imgIndex}
-                          src={image}
-                          alt={`Step ${index + 1}`}
-                        />
-                      ))}
+                      <ImageStepper images={step.images} />
                     </div>
                   </>
                 )}

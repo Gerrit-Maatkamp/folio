@@ -2,11 +2,21 @@ import React from "react";
 import "./project.scss";
 import { ProjectItem } from "../../interfaces";
 
+const getBase = () => {
+  if (typeof process !== "undefined" && process.env && process.env.PUBLIC_URL) {
+    return process.env.PUBLIC_URL;
+  } else {
+    return "src";
+  }
+};
+
+const baseUrl = getBase();
+
 const Project: React.FC<ProjectItem> = (project) => {
   return (
     <div className="project">
       <div className="project-image">
-        <img src={project.imageUrl} alt={project.name} />
+        <img src={baseUrl + project.imageUrl} alt={project.name} />
       </div>
       <div className="project-content">
         <h3>{project.name}</h3>

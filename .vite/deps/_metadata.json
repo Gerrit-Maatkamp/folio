@@ -1,0 +1,55 @@
+{
+  "hash": "2bc1a8ae",
+  "configHash": "b050c5a6",
+  "lockfileHash": "04830428",
+  "browserHash": "5522a887",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "45773d4e",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "2a6f21bd",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Mail": {
+      "src": "../../node_modules/@mui/icons-material/Mail.js",
+      "file": "@mui_icons-material_Mail.js",
+      "fileHash": "763c29cd",
+      "needsInterop": true
+    },
+    "@mui/icons-material/LinkedIn": {
+      "src": "../../node_modules/@mui/icons-material/LinkedIn.js",
+      "file": "@mui_icons-material_LinkedIn.js",
+      "fileHash": "a090c1b9",
+      "needsInterop": true
+    },
+    "@mui/icons-material/GitHub": {
+      "src": "../../node_modules/@mui/icons-material/GitHub.js",
+      "file": "@mui_icons-material_GitHub.js",
+      "fileHash": "bb211151",
+      "needsInterop": true
+    },
+    "@mui/icons-material": {
+      "src": "../../node_modules/@mui/icons-material/esm/index.js",
+      "file": "@mui_icons-material.js",
+      "fileHash": "e3924948",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-GP6KYTHU": {
+      "file": "chunk-GP6KYTHU.js"
+    },
+    "chunk-JUDQETT7": {
+      "file": "chunk-JUDQETT7.js"
+    },
+    "chunk-6EPYQA3G": {
+      "file": "chunk-6EPYQA3G.js"
+    }
+  }
+}

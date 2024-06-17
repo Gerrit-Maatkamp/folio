@@ -6,13 +6,16 @@ const getBase = () => {
   if (typeof process !== "undefined" && process.env && process.env.PUBLIC_URL) {
     return process.env.PUBLIC_URL;
   } else {
-    return "src";
+    return "/src";
   }
 };
 
 const baseUrl = getBase();
 
 const Project: React.FC<ProjectItem> = (project) => {
+  console.log("baseUrl + project.imageUrl");
+  console.log(baseUrl + project.imageUrl);
+
   return (
     <div className="project">
       <div className="project-image">

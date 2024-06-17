@@ -10,11 +10,14 @@ const getBase = () => {
   if (typeof process !== "undefined" && process.env && process.env.PUBLIC_URL) {
     return process.env.PUBLIC_URL;
   } else {
-    return "src";
+    return "/src";
   }
 };
 
 const ImageStepper: React.FC<ImageStepperProps> = ({ images }) => {
+  console.log("images!");
+  console.log(images);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const controlsRef = useRef<HTMLDivElement>(null);
   const baseUrl = getBase();
@@ -54,6 +57,8 @@ const ImageStepper: React.FC<ImageStepperProps> = ({ images }) => {
     };
   }, []);
 
+  console.log("image");
+  console.log(baseUrl + images[currentIndex]);
   return (
     <div className="image-stepper">
       <img

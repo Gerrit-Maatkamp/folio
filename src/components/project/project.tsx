@@ -18,11 +18,11 @@ const Project: React.FC<ProjectItem> = (project) => {
 
   return (
     <div className="project">
-      {/* <div className="project-image">
+      <div className="project-image">
         <img src={baseUrl + project.imageUrl} alt={project.name} />
-      </div> */}
+      </div>
       <div className="project-content">
-        {/* <h3>{project.name}</h3> */}
+        <h3>{project.name}</h3>
         <p>{project.summary}</p>
       </div>
     </div>

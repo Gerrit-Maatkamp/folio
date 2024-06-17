@@ -138,7 +138,7 @@
                 "id": "BC-01",
                 "name": "Inventory",
                 "summary": "Binwise and BlueCart merged a few years ago and this project is about recreating the Binwise inventory system into BlueCart",
-                "imageUrl": "/assets/images/bluecart-inventory.png",
+                "imageUrl": "/assets/images/inventory/bluecart-inventory.png",
                 "steps":[
                     {
                         "heading": "Grapes to Goods",

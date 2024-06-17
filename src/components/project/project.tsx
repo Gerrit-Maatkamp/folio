@@ -14,7 +14,8 @@ const baseUrl = getBase();
 
 const Project: React.FC<ProjectItem> = (project) => {
   console.log("baseUrl + project.imageUrl");
-  console.log(baseUrl + project.imageUrl);
+  // console.log(baseUrl + project.imageUrl);
+  console.log("%PUBLIC_URL%" + project.imageUrl);
 
   return (
     <div className="project">

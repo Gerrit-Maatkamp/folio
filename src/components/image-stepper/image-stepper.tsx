@@ -15,9 +15,6 @@ const getBase = () => {
 };
 
 const ImageStepper: React.FC<ImageStepperProps> = ({ images }) => {
-  console.log("images!");
-  console.log(images);
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const controlsRef = useRef<HTMLDivElement>(null);
   const baseUrl = getBase();

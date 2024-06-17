@@ -79,9 +79,7 @@ const Dialog: React.FC<DialogProps> = ({ project, onClose }) => {
           <div className="filler"></div>
         </div>
         <button className="close-button" onClick={onClose}>
-          <span className="close-button-back-text">
-            Click outside the popup to go back
-          </span>
+          <span className="close-button-back-text">Click here to go back</span>
         </button>
       </div>
     </div>

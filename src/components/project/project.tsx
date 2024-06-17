@@ -22,7 +22,7 @@ const Project: React.FC<ProjectItem> = (project) => {
         <img src={baseUrl + project.imageUrl} alt={project.name} />
       </div> */}
       <div className="project-content">
-        <h3>{project.name}</h3>
+        {/* <h3>{project.name}</h3> */}
         <p>{project.summary}</p>
       </div>
     </div>

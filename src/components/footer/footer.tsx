@@ -3,6 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { ContentCopy } from "@mui/icons-material";
 import "./footer.scss";
+import React from "react";
 
 const copyToClipboard = (text: string) => {
   navigator.clipboard.writeText(text).then(() => {
@@ -10,7 +11,7 @@ const copyToClipboard = (text: string) => {
   });
 };
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="footer">
       <div className="buttongroup-vertical">
@@ -43,16 +44,16 @@ const Footer = () => {
           <LinkedInIcon />
           Check my LinkedIn
         </a>
+        <a
+          className="button button-text"
+          href="https://github.com/Gerrit-Maatkamp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHubIcon />
+          GitHub
+        </a>
       </div>
-      <a
-        className="button button-text"
-        href="https://github.com/Gerrit-Maatkamp"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <GitHubIcon />
-        GitHub
-      </a>
     </div>
   );
 };

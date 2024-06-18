@@ -3,11 +3,7 @@ import "./project.scss";
 import { ProjectItem } from "../../interfaces";
 
 const getBase = () => {
-  if (typeof process !== "undefined" && process.env && process.env.PUBLIC_URL) {
-    return process.env.PUBLIC_URL;
-  } else {
-    return "/src";
-  }
+  return window.location.protocol === "https:" ? "" : "/src/";
 };
 
 const baseUrl = getBase();

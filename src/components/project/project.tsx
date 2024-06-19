@@ -3,7 +3,7 @@ import "./project.scss";
 import { ProjectItem } from "../../interfaces";
 
 const getBase = () => {
-  return window.location.protocol === "https:" ? "" : "/src/";
+  return window.location.protocol === "https:" ? "" : "src/";
 };
 
 const baseUrl = getBase();

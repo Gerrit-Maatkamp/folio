@@ -7,7 +7,7 @@ interface ImageStepperProps {
 }
 
 const getBase = () => {
-  return window.location.protocol === "https:" ? "" : "/src/";
+  return window.location.protocol === "https:" ? "" : "src/";
 };
 
 const ImageStepper: React.FC<ImageStepperProps> = ({ images }) => {
